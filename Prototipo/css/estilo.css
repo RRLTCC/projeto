@@ -1,0 +1,88 @@
+body{
+	background-color: #fbf7f7;
+}
+.form-login{
+	margin: 15% auto 0;
+	width: 350px;
+	background-color: #ededed;
+}
+
+#login-heading{
+	background-color: #1d2b3f;
+	color: #f5f6f7;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+#login-holder{
+	padding: 20px;	
+}
+
+#login-usuario{
+	margin-top: 15px;
+}
+
+#login-senha{
+	margin-top: 20px;
+}
+
+#login-btnEntrar{
+	margin: 30px auto 15px;
+	width: 150px;
+}
+
+#esqSenha{
+	text-align: center;
+	color: #999595;
+	
+}
+
+.sub-menu{
+	background-color: #f4f4f4;
+	margin-left: 15px;
+	padding: 5px;
+	
+}
+
+.dropdown .sub-menu a:hover{
+	background-color: #ff7171;
+	color: #efefef;
+	text-decoration: none;
+
+}
+
+
+.dropdown a{
+	color: #787b7f;
+	display: block;
+	padding: 5px;
+}
+
+.navbar ul{
+	list-style-type: none;
+}
+
+#header{
+	width: 100%;
+	background-color: #1d2b3f;
+}
+
+.navbar-header a {
+	text-decoration: none;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 2em;
+	font-weight: 2.5;
+	color: #efefef;
+	margin-right: 20px;
+}
+
+#nav-cont{
+	margin-left: -15px;
+}
+
+#body-cont{
+	height: 650px;
+}
+

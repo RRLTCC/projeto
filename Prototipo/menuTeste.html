@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Login</title>
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		  <link href="css/estilo.css" rel="stylesheet">
+	</head>
+<body>
+	<script>
+	$(document).ready(function() {
+	    var divone = jQuery("#nav-cont").height();
+	    var divtwo = jQuery("#body-cont").height();
+
+	    var maxdiv = Math.max(divone, divtwo);
+
+	    jQuery("#nav-cont").height(maxdiv);
+	    jQuery("#body-cont").height(maxdiv);
+
+	});	
+	</script>
+	
+	
+	<div class="container-fluid">
+		<div class="row">
+					  <div class="navbar-header">
+					    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					      <span class="sr-only">Toggle navigation</span>
+					      <span class="icon-bar"></span>
+					      <span class="icon-bar"></span>
+					      <span class="icon-bar"></span>
+					    </button>
+					    <a class="navbar-brand" href="#">CIET</a>
+					   </div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<nav class="navbar navbar-default" id="nav-cont">
+					   
+					   <div class="collapse navbar-collapse">
+					   		
+					   		<ul class="nav navbar-nav">			   			
+					   			<li class="dropdown">
+							        <a href="#dash" class="dropdown-toggle" data-toggle="collapse"> Dashboard <b class="caret"></b></a>
+							        <ul class="sub-menu collapse" id="dash">
+							            <li><a href="selecionarCrawler.php">Crawler</a></li>
+							            <li><a href="selecionarVaga.php">Vagas </a></li>
+										<li><a href="#">Area de trabalho</a></li>
+										<li><a href="#">Favoritos</a></li>
+							        </ul>
+							    </li>
+					   		</ul>
+					   		
+					   		<ul class="nav navbar-nav">
+					   			<li class="dropdown">
+								    <a href="#cad" class="dropdown-toggle" data-toggle="collapse"> Cadastro <b class="caret"></b></a>
+								   	<ul class="sub-menu collapse" id="cad">
+								   		<li><a href="selecionarEmpregador.php">Empregadores</a></li>
+										<li><a href="selecionarUsuario.php">Usuários</a></li>
+										<li><a href="selecionarPerfil.php">Perfis de usuários</a></li>
+						   			</ul>	
+					   			</li>
+					   		</ul>
+					   		
+					   		<ul class="nav navbar-nav">
+					   			<li class="dropdown">
+								    <a href="#graf" class="dropdown-toggle" data-toggle="collapse"> Gráficos <b class="caret"></b></a>
+								   	<ul class="sub-menu collapse" id="graf">
+								   		<li><a href="#">Empregadores</a></li>
+										<li><a href="#">Favoritas</a></li>
+										<li><a href="#">Crawler</a></li>
+										<li><a href="#">Vagas</a></li>
+						   			</ul>	
+					   			</li>
+					   		 
+					   		</ul>
+					   		<ul class="nav navbar-nav">
+					   		
+					   			<li class="dropdown">
+								    <a href="#relat" class="dropdown-toggle" data-toggle="collapse"> Relatórios <b class="caret"></b></a>
+								   	<ul class="sub-menu collapse" id="relat">
+										<li><a href="#">Empregadores</a></li>
+										<li><a href="#">Favoritas</a></li>
+										<li><a href="#">Crawler</a></li>
+										<li><a href="#">Vagas</a></li>
+						   			</ul>	
+					   			</li>
+					   		</ul>		   			
+					   </div>
+				</nav>
+			</div>
+			
+			<div class="col-md-10" id="body-cont"></div>
+		
+		</div>
+	</div>	
+</body>
+</html>
